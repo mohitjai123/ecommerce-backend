@@ -14,7 +14,3 @@ jobs:
         run: |
           cd /home/runneruser/ecommerce-backend
           git pull origin main
-
-      - name: 🔄 Install deps & restart app
-        run: |
-          pm2 restart ecosystem.config.js || pm2 start npm --name "ecommerce-backend" -- start
