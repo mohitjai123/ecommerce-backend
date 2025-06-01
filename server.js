@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const cors = require("cors")
 const indexRoutes = require("./routes/index.routes")
-
+//comment
 app.use(express.json());
 app.use(cors({
   origin: "*",
