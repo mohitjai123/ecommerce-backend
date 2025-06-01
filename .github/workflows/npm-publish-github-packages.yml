@@ -38,6 +38,6 @@ jobs:
       - name: Install PM2
         run: npm install -g pm2
 
-      - run: pm2 start npx nodemon
+      - run: pm2 start npx --name "nodemon" -- run nodemon
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
